@@ -1,0 +1,182 @@
+{% extends "base.html" %}
+
+{% block content %}
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-background">
+        <div class="hero-building"></div>
+    </div>
+    <div class="container">
+        <div class="hero-content">
+            <h1 class="hero-title">More than properties, we deliver dreams</h1>
+            <p class="hero-subtitle">Your premier partner in luxury real estate, delivering exceptional service and extraordinary properties</p>
+            <button class="hero-btn">
+                Explore more <span></span> <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+</section>
+
+<!-- Properties Section -->
+<section class="properties-section">
+    <div class="container">
+        <div class="section-header" style="margin-bottom: 50px; text-align: left;">
+            <h2 class="section-title">Find your dream home, create your perfect story</h2>
+            <button class="view-all-btn hero-btn">
+                View all <span></span> <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+
+        <div class="properties-grid">
+            <!-- Property Card 1 - Crestview estate -->
+            <div class="property-card" onclick="window.location.href='/listings' ">
+                <div class="property-image">
+                    <img src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=500&h=400&fit=crop" alt="Crestview estate">
+                </div>
+                <div class="property-content">
+                    <h3 class="property-title">Raya</h3>
+                    <p class="property-price">₹ 270,000</p>
+                </div>
+            </div>
+
+            <!-- Property Card 2 - Sunset bluff -->
+            <div class="property-card" onclick="window.location.href='/listings' ">
+                <div class="property-image">
+                    <img src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=500&h=400&fit=crop" alt="Sunset bluff">
+                </div>
+                <div class="property-content">
+                    <h3 class="property-title">Sunset bluff</h3>
+                    <p class="property-price">₹ 221,500</p>
+                </div>
+            </div>
+
+            <!-- Property Card 3 - Silver birch -->
+            <div class="property-card" onclick="window.location.href='/listings' ">
+                <div class="property-image">
+                    <img src="https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=500&h=400&fit=crop" alt="Silver birch">
+                </div>
+                <div class="property-content">
+                    <h3 class="property-title">Silver birch</h3>
+                    <p class="property-price">₹ 112,000</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Features Section -->
+<section class="features-section">
+    <div class="container">
+        <div class="features-content">
+            <div class="features-text">
+                <h2 class="section-title">Discover our proficiency</h2>
+                <p class="section-subtitle">Features built to simplify your journey.</p>
+
+                <div class="features-list">
+                    <div class="feature-item">
+                        <button class="feature-btn active" data-feature="market">
+                            <span class="feature-title">Expert market knowledge</span>
+                        </button>
+                        <div class="feature-desc active" data-desc="market">
+                            A real estate company with strong market expertise can offer valuable insights.
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <button class="feature-btn" data-feature="communication">
+                            <span class="feature-title">Strong communication</span>
+                        </button>
+                        <div class="feature-desc" data-desc="communication">
+                            Clear and timely communication ensures smooth transactions and client satisfaction.
+                        </div>
+                    </div>
+
+                    <div class="feature-item">
+                        <button class="feature-btn" data-feature="professionalism">
+                            <span class="feature-title">Professionalism</span>
+                        </button>
+                        <div class="feature-desc" data-desc="professionalism">
+                            Professional approach builds trust and delivers exceptional service quality.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="features-image">
+                <div class="feature-image active" data-image="market">
+                    <img src="../static/images/expert-market-knowledge.jpg" alt="Expert Market Knowledge">
+                </div>
+                <div class="feature-image" data-image="communication">
+                    <img src="../static/images/strong-communication.jpg" alt="Strong Communication">
+                </div>
+                <div class="feature-image" data-image="professionalism">
+                    <img src="../static/images/professionalism.jpg" alt="Professionalism">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- FAQ Section -->
+<section class="faq-section">
+    <div class="container">
+        <div class="faq-header">
+            <h2 class="faq-title">Your questions answered</h2>
+            <p class="faq-subtitle">Here are the most common questions clients ask.</p>
+            <button class="get-in-touch-btn" onclick="window.location.href='/contact'">
+                Get in touch <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+
+        <div class="faq-list">
+            <div class="faq-item">
+                <button class="faq-question" data-faq="1">
+                    <span>What services does EN Realty provide for developers and builders?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer" id="faq-1">
+                    <p>We offer end-to-end support—from project feasibility studies, branding, and marketing strategy to regulatory compliance, lead conversion optimization, and sales analytics. Our collaborative approach ensures smoother execution and faster market penetration.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" data-faq="2">
+                    <span>How does EN Realty help architects with design and coordination?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer" id="faq-2">
+                    <p>We streamline architect-developer coordination by providing clear design briefs, real-time feedback dashboards, and compliance tracking. Our goal is to minimize rework and align design output with market trends.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" data-faq="3">
+                    <span>Can EN Realty assist with RERA registration and documentation?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer" id="faq-3">
+                    <p>Yes. Our legal advisory team ensures all documentation aligns with state-specific RERA requirements. We offer dedicated assistance for registrations, amendments, and public disclosures.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" data-faq="4">
+                    <span>What marketing services do you offer for real estate projects?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer" id="faq-4">
+                    <p>From naming strategies and thematic branding to lead generation campaigns and interactive virtual walkthroughs, we craft compelling narratives that resonate with your target audience and boost engagement across platforms.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" data-faq="5">
+                    <span>How do I collaborate with EN Realty on a new project?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer" id="faq-5">
+                    <p>Just drop us a message via our contact form or email. We'll schedule an initial consultation to understand your vision, after which our team drafts a customized action plan tailored to your project's needs.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

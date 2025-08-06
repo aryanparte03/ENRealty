@@ -1,0 +1,185 @@
+{% extends "base.html" %}
+
+{% block title %}Contact Us - ENRealty{% endblock %}
+
+{% block content %}
+<!-- Contact Hero Section -->
+<section class="contact-hero">
+    <div class="container">
+        <div class="contact-hero-content">
+            <h1 class="contact-title">Here to connect</h1>
+            <p class="contact-subtitle" style="color: white">Need help? Browse our FAQs for quick answers or reach out to us directly.</p>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Form Section -->
+<section class="contact-section">
+    <div class="container">
+        <div class="contact-grid">
+            <!-- Contact Form -->
+            <div class="contact-form-container">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="request" class="form-label">Request</label>
+                        <select id="request" name="request" class="form-select" required>
+                            <option value="buy">Buy property</option>
+                            <option value="sell">Sell property</option>
+                            <option value="rent">Rent property</option>
+                            <option value="consultation">Property consultation</option>
+                            <option value="other">Other inquiry</option>
+                        </select>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="fullName" class="form-label">Full name</label>
+                            <input type="text" id="fullName" name="fullName" class="form-input" placeholder="John Miller" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phoneNumber" class="form-label">Phone number</label>
+                            <input type="tel" id="phoneNumber" name="phoneNumber" class="form-input" placeholder="+0 000 000 00" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="emailAddress" class="form-label">Email address</label>
+                        <input type="email" id="emailAddress" name="emailAddress" class="form-input" placeholder="john@email.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" name="message" class="form-textarea" placeholder="Your message" rows="6"></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        <span class="btn-text">Submit</span>
+                        <i class="fas fa-arrow-right btn-arrow"></i>
+                    </button>
+                </form>
+            </div>
+
+            <!-- Contact Info & Map -->
+            <div class="contact-info-container">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3 class="info-title">Visit our office</h3>
+                            <p class="info-text">The Landmark, 809/810, Plot No. 26A,<br>Sector 7, Kharghar, Navi Mumbai,<br>Maharashtra 410210</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3 class="info-title">Call us</h3>
+                            <p class="info-text">
+                                <a href="tel:+918433642243" class="phone-link">+91 84336 42243</a>
+                                <br>Mon-Fri 9AM-6PM
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3 class="info-title">Email us</h3>
+                            <p class="info-text">
+                                <a href="mailto:partearyan713@gmail.com" class="email-link">partearyan713@gmail.com</a>
+                                <br>We'll respond within 24 hours
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Map Section -->
+                <div class="map-container">
+                    <div class="map-placeholder">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.6867228675655!2d73.066715!3d19.033521399999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xa0f36bbd9748686b%3A0xd787c87d6a1862b8!2sEnvision%20Next!5e0!3m2!1sen!2sin!4v1753987262391!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                            width="100%" 
+                            height="280" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="faq-section">
+    <div class="container">
+        <div class="faq-header">
+            <h2 class="faq-title">Your questions answered</h2>
+            <p class="faq-subtitle">Here are the most common questions clients ask.</p>
+            <button class="get-in-touch-btn" onclick="window.location.href='/contact'">
+                Get in touch <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+
+        <div class="faq-list">
+            <div class="faq-item">
+                <button class="faq-question" data-faq="1">
+                    <span>What services does EN Realty provide for developers and builders?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer" id="faq-1">
+                    <p>We offer end-to-end support—from project feasibility studies, branding, and marketing strategy to regulatory compliance, lead conversion optimization, and sales analytics. Our collaborative approach ensures smoother execution and faster market penetration.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" data-faq="2">
+                    <span>How does EN Realty help architects with design and coordination?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer" id="faq-2">
+                    <p>We streamline architect-developer coordination by providing clear design briefs, real-time feedback dashboards, and compliance tracking. Our goal is to minimize rework and align design output with market trends.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" data-faq="3">
+                    <span>Can EN Realty assist with RERA registration and documentation?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer" id="faq-3">
+                    <p>Yes. Our legal advisory team ensures all documentation aligns with state-specific RERA requirements. We offer dedicated assistance for registrations, amendments, and public disclosures.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" data-faq="4">
+                    <span>What marketing services do you offer for real estate projects?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer" id="faq-4">
+                    <p>From naming strategies and thematic branding to lead generation campaigns and interactive virtual walkthroughs, we craft compelling narratives that resonate with your target audience and boost engagement across platforms.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" data-faq="5">
+                    <span>How do I collaborate with EN Realty on a new project?</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="faq-answer" id="faq-5">
+                    <p>Just drop us a message via our contact form or email. We'll schedule an initial consultation to understand your vision, after which our team drafts a customized action plan tailored to your project's needs.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}
