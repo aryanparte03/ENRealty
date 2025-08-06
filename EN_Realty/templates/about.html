@@ -1,0 +1,294 @@
+{% extends "base.html" %}
+
+{% block title %}About Us - ENRealty{% endblock %}
+
+{% block content %}
+<body>
+    <!-- About Hero Section -->
+    <section class="about-hero">
+        <div class="container">
+            <div class="about-hero-content">
+                <h1 class="about-title">About us</h1>
+                <p class="about-subtitle" style="color: white">We are a team of passionate real estate professionals dedicated to helping you find your dream home. With years of experience and deep market knowledge, we provide personalized service that exceeds expectations.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="team-section intelligent-team">
+      <div class="container">
+        <div>
+          <h2 class="section-title-testimonial">Our Leadership & Expertise</h2>
+        </div>
+        <div>
+          <p class="section-description">
+            Visionaries. Strategists. Partners.<br>
+            The minds behind our legacy of landmark projects and client trust.
+          </p>
+        </div>
+
+        <div class="team-showcase-grid">
+          <!-- Team Member Example -->
+          <div class="profile-card">
+            <div class="profile-head">
+              <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face" alt="Sarah Johnson" class="profile-photo grayscale" />
+              <div class="profile-info">
+                <h3 class="profile-name">Sarah Johnson</h3>
+                <span class="profile-role">Founding Partner & Lead Strategist</span>
+              </div>
+            </div>
+            <blockquote class="profile-quote">
+              “Architecture is a language. We translate aspirations into iconic realities.”
+            </blockquote>
+            <ul class="profile-highlights">
+              <li>20+ years shaping luxury skylines in Mumbai and Singapore</li>
+              <li>Featured in Forbes Asia for “Next-Gen Developers”</li>
+              <li>PhD in Urban Economics, MIT</li>
+            </ul>
+            <div class="profile-links">
+              <a href="mailto:sarah@realest.com" class="contact-link"><i class="fas fa-envelope"></i></a>
+              <a href="#" class="contact-link"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+
+          <!-- More Members -->
+          <div class="profile-card">
+            <div class="profile-head">
+              <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face" alt="Michael Chen" class="profile-photo grayscale" />
+              <div class="profile-info">
+                <h3 class="profile-name">Michael Chen</h3>
+                <span class="profile-role">Head of Investment & Analytics</span>
+              </div>
+            </div>
+            <blockquote class="profile-quote">
+              “Real value is created where vision meets rigorous analysis.”
+            </blockquote>
+            <ul class="profile-highlights">
+              <li>Advisor on $1B+ transactions across 3 continents</li>
+              <li>Speaker, Urban Wealth Summit 2024</li>
+              <li>MS, Financial Engineering, LSE</li>
+            </ul>
+            <div class="profile-links">
+              <a href="mailto:michael@realest.com" class="contact-link"><i class="fas fa-envelope"></i></a>
+              <a href="#" class="contact-link"><i class="fab fa-linkedin"></i></a>
+            </div>
+          </div>
+
+          <!-- More members... repeat similar for Emily, David, Lisa, James etc. with their unique highlights/credentials -->
+
+        </div>
+      </div>
+    </section>
+
+    <!--Testimonials-->
+    <section>
+        <div>
+          <h2 class="section-title-testimonial">Genuine Impressions</h2><br>
+        </div>
+    </section>
+    <section class="testimonial-section">
+      <div class="label-vertical">Testimonials</div>
+      <div class="testimonial-container">
+        <article class="testimonial-card active">
+          <p class="testimonial-text">
+            "Choosing RERA Easy for our MahaRERA compliance needs was one of the best decisions we've made. Their comprehensive package not only ensures that we meet all necessary regulations but also provides peace of mind knowing that we have a knowledgeable team guiding us through any challenges that may arise."
+          </p>
+          <footer class="testimonial-footer">
+            <img src="{{ url_for('static', filename='images/testimonial-1.jpg') }}" alt="John Murphy" />
+            <div>
+              <h4>John Murphy</h4>
+              <p>Real Estate Blogger</p>
+            </div>
+          </footer>
+        </article>
+        <article class="testimonial-card">
+          <p class="testimonial-text">
+            "Working with RERA Easy has been a game-changer for our real estate projects. Their expertise in regulatory compliance and proactive approach to problem-solving has saved us countless hours and potential legal complications."
+          </p>
+          <footer class="testimonial-footer">
+            <img src="{{ url_for('static', filename='images/testimonial-2.jpg') }}" alt="John Murphy" />
+            <div>
+              <h4>Emily Jones</h4>
+              <p>Project Manager</p>
+            </div>
+          </footer>
+        </article>
+        <article class="testimonial-card">
+          <p class="testimonial-text">
+            "The level of professionalism and attention to detail that RERA Easy brings to every project is outstanding. They've helped us navigate complex regulatory requirements with ease and confidence."
+          </p>
+          <footer class="testimonial-footer">
+            <img src="{{ url_for('static', filename='images/testimonial-3.jpg') }}" alt="John Murphy" />
+            <div>
+              <h4>Michael Smith</h4>
+              <p>Architect</p>
+            </div>
+          </footer>
+        </article>
+      </div>
+      <div class="nav-zone left"></div>
+      <div class="nav-zone right"></div>
+      <div class="dots-container">
+        <div class="dot active" data-slide="0"></div>
+        <div class="dot" data-slide="1"></div>
+        <div class="dot" data-slide="2"></div>
+      </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="values-section">
+        <div class="container">
+            <div class="values-content">
+                <h2 class="values-title">Our commitment to excellence</h2>
+                <div class="values-grid">
+                    <div class="value-item">
+                        <div class="value-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h3 class="value-name">Trust & Integrity</h3>
+                        <p class="value-description">We build lasting relationships through honest communication and transparent processes.</p>
+                    </div>
+                    <div class="value-item">
+                        <div class="value-icon">
+                            <i class="fas fa-star"></i>
+                        </div>
+                        <h3 class="value-name">Excellence</h3>
+                        <p class="value-description">We strive for perfection in every detail, ensuring exceptional service and results.</p>
+                    </div>
+                    <div class="value-item">
+                        <div class="value-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 class="value-name">Client-Focused</h3>
+                        <p class="value-description">Your goals are our priority. We tailor our services to meet your unique needs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Custom Testimonial Cursor -->
+    <div id="leftCursor" class="cursor-wrapper" style="pointer-events: none;">
+      <span class="cursor-inner">
+        <span class="nav-arrow">&#8592;</span>
+      </span>
+    </div>
+    <div id="rightCursor" class="cursor-wrapper" style="pointer-events: none;">
+      <span class="cursor-inner">
+        <span class="nav-arrow">&#8594;</span>
+      </span>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script>
+      //Testimonials in About
+    document.addEventListener('DOMContentLoaded', () => {
+      // --- Hide site-wide custom cursor inside testimonial section ---
+      const customCursor = document.querySelector('.custom-cursor');
+      const testimonialSection = document.querySelector('.testimonial-section');
+
+      if (customCursor && testimonialSection) {
+        testimonialSection.addEventListener('mouseenter', () => {
+          customCursor.style.opacity = '0';
+          customCursor.style.pointerEvents = 'none';
+        });
+
+        testimonialSection.addEventListener('mouseleave', () => {
+          customCursor.style.opacity = '1';
+          customCursor.style.pointerEvents = 'none';
+        });
+      }
+
+      // --- Testimonial carousel functionality ---
+      let currentSlide = 0;
+      const cards = document.querySelectorAll('.testimonial-card');
+      const dots = document.querySelectorAll('.dot');
+      const totalSlides = cards.length;
+
+      const rightCursor = document.getElementById('rightCursor');
+      const leftCursor = document.getElementById('leftCursor');
+      const rightZone = document.querySelector('.nav-zone.right');
+      const leftZone = document.querySelector('.nav-zone.left');
+
+      if (!cards.length || !dots.length || !rightCursor || !leftCursor || !rightZone || !leftZone) return;
+
+      function updateSlide() {
+        cards.forEach((card, index) => {
+          card.classList.remove('active', 'prev');
+          if (index === currentSlide) {
+            card.classList.add('active');
+          } else if (index < currentSlide) {
+            card.classList.add('prev');
+          }
+        });
+        dots.forEach((dot, index) => {
+          dot.classList.toggle('active', index === currentSlide);
+        });
+      }
+
+      function nextTestimonial() {
+        currentSlide = (currentSlide + 1) % totalSlides;
+        updateSlide();
+      }
+
+      function prevTestimonial() {
+        currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+        updateSlide();
+      }
+
+      dots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+          currentSlide = index;
+          updateSlide();
+        });
+      });
+
+      rightZone.addEventListener('click', nextTestimonial);
+      leftZone.addEventListener('click', prevTestimonial);
+
+      document.addEventListener('mousemove', (e) => {
+        const mouseX = e.clientX;
+        const mouseY = e.clientY;
+
+        const rightRect = rightZone.getBoundingClientRect();
+        const leftRect = leftZone.getBoundingClientRect();
+
+        rightCursor.style.left = (mouseX + 15) + 'px';
+        rightCursor.style.top = (mouseY + 15) + 'px';
+        leftCursor.style.left = (mouseX - 15) + 'px';
+        leftCursor.style.top = (mouseY + 15) + 'px';
+
+        if (
+          mouseX >= rightRect.left &&
+          mouseX <= rightRect.right &&
+          mouseY >= rightRect.top &&
+          mouseY <= rightRect.bottom
+        ) {
+          rightCursor.classList.add('visible');
+        } else {
+          rightCursor.classList.remove('visible');
+        }
+
+        if (
+          mouseX >= leftRect.left &&
+          mouseX <= leftRect.right &&
+          mouseY >= leftRect.top &&
+          mouseY <= leftRect.bottom
+        ) {
+          leftCursor.classList.add('visible');
+        } else {
+          leftCursor.classList.remove('visible');
+        }
+      });
+
+      // Initialize first slide as active
+      updateSlide();
+
+      // Auto-slide every 8 seconds
+      setInterval(() => {
+        nextTestimonial();
+      }, 8000);
+    });
+
+    </script>
+</body>
+{% endblock %}
